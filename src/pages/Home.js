@@ -1,6 +1,18 @@
+import Hero from "../components/Hero";
+import Highlights from "../components/Highlights";
+import Testimonials from "../components/Testimonials";
+import About from "../components/About";
+
+
 const Home = () => {
     return(
-        <h1> Homepage </h1>
+        <>
+            <Hero/>
+            <Highlights/>
+            <Testimonials/>
+            <About/>
+        </>
+
     )
 }
 
