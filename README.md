@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## React Router- Navigate between multiple components within react.
+
+! Note, this is a simple example. It's also still client-side rendering, which is not good for SEO. If you're trying to make a "real" website, check out NextJS or Gatsby.
