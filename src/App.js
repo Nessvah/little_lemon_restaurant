@@ -10,6 +10,7 @@ import "@fontsource/karla"
 
 
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return(
@@ -21,6 +22,7 @@ function App() {
               <Route path={"/reservations"} element={<Reservations/>}/>
               <Route path={"*"} element={<PageNotFound/>}/>
           </Routes>
+          <Footer/>
       </ChakraProvider>
 
       )
