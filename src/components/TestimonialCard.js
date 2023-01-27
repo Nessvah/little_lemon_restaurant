@@ -1,23 +1,23 @@
 import { Heading, HStack, Image, Text, VStack, Box } from "@chakra-ui/react";
 
 
-const TestimonialCard = ({ title, description, imageSrc }) => {
+const TestimonialCard = ({ name, imageSrc, comment, ratings }) => {
     return (
         <VStack
-            color="black"
-            backgroundColor="#ffffff"
-            border={"1px solid black"}
+            color="Dark"
+            backgroundColor={'White'}
+            border={"none"}
             cursor="pointer"
-            borderRadius="xl"
+            borderRadius={16}
         >
-            <Image src={imageSrc} alt={title} borderRadius="xl" />
+
             <HStack spacing={4} p={4} justifyContent="flex-start" width={"100%"}>
                 <Heading as="h3" size="md" color="secundary">
-                    {title}
+                    {name}
                 </Heading>
             </HStack>
             <Text color="black" fontSize="lg" pr={4} pl={4}>
-                {description}
+                {comment}
             </Text>
             <HStack display="flex" gap={8} justifyContent="flex-start" width={"100%"} pt={2} pb={2}>
                 <HStack spacing={2} pl={4}>
