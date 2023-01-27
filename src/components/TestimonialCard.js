@@ -1,7 +1,7 @@
 import { Heading, HStack, Image, Text, VStack, Box } from "@chakra-ui/react";
 
 
-const Card = ({ title, description, imageSrc }) => {
+const TestimonialCard = ({ title, description, imageSrc }) => {
     return (
         <VStack
             color="black"
@@ -33,4 +33,4 @@ const Card = ({ title, description, imageSrc }) => {
     );
 };
 
-export default Card;
+export default TestimonialCard;
