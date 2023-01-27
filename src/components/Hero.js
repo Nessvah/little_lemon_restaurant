@@ -11,7 +11,8 @@ const Hero = () => {
                     <VStack w={'40%'} m={'2rem auto 2rem 0'} alignItems={'flex-start'} gap={'2rem'}>
                         <Stack direction={'column'}>
                             {/*Find a way to get this two headings closer to each other*/}
-                            <Heading as={'h1'} fontWeight={'regular'} color={'Yellow'} lineHeight={'-2px'} fontSize={64}>Little Lemon</Heading>
+                            <Heading as={'h1'} fontWeight={'regular'} color={'Yellow'} lineHeight={'-2px'}
+                                     fontSize={64}>Little Lemon</Heading>
                             <Heading as={'h2'} fontWeight={'regular'} fontSize={40} mt={0}>Chicago</Heading>
                         </Stack>
 

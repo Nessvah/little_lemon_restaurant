@@ -15,12 +15,14 @@ import Footer from "./components/Footer";
 function App() {
   return(
       <ChakraProvider resetCSS theme={brand}>
+          <Navbar/>
           <Routes>
               {/*index path - the component to go to*/}
               <Route path="/" element={<Home/>}/>
               <Route path={"/reservations"} element={<Reservations/>}/>
               <Route path={"*"} element={<PageNotFound/>}/>
           </Routes>
+          <Footer/>
       </ChakraProvider>
 
       )
