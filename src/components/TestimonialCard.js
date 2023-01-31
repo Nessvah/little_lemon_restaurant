@@ -7,7 +7,7 @@ const TestimonialCard = ({ name, imageSrc, comment, ratings }) => {
     const renderRatings = (ratings) => {
         let stars = [];
         for(let i=0; i < ratings; i++){
-            stars.push(<Image key={i} src={star} boxSize={'25px'}></Image>);
+            stars.push(<Image key={i} src={star} boxSize={'20px'} alt={''}></Image>);
         }
         return stars;
     }
@@ -24,13 +24,14 @@ const TestimonialCard = ({ name, imageSrc, comment, ratings }) => {
                     {name}
                 </Heading>
                 <HStack p>
-                    <Avatar src={imageSrc} width={'65px'} height={'65px'} objectFit={'cover'}/>
+                    <Avatar src={imageSrc} width={'65px'} height={'65px'} objectFit={'cover'} alt={'profile picture of ' +
+                        'costumer'}/>
                     <Text hyphens={'auto'}>
                         {comment}
                     </Text>
                 </HStack>
             <HStack display="flex" gap={8} justifyContent="flex-start" width={"100%"} pt={2} pb={2}>
-                <HStack spacing={2} >
+                <HStack spacing={1}>
                     {
                         renderRatings(ratings)
                     }
