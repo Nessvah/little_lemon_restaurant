@@ -9,7 +9,7 @@ const Navbar = () => {
         <header className={'header'}>
             <HStack maxW={'860px'} margin={'0 auto'} justifyContent={'space-between'} alignItems={'center'} h={'100%'}>
                 <Box>
-                    <Image boxSixe={'150px'} objectFit={'cover'} src={Logo} alt={'Little Lemon logo'}></Image>
+                    <Image width={'150px'} objectFit={'cover'} src={Logo} alt={'Little Lemon logo'}></Image>
                 </Box>
                 <nav>
                     <UnorderedList styleType={'none'}>

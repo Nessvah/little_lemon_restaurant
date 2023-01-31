@@ -1,7 +1,16 @@
-import { Heading, HStack, Image, Text, VStack, Box } from "@chakra-ui/react";
+import {Heading, HStack, Avatar, Text, VStack, Image} from "@chakra-ui/react";
+import star from '../images/ratingstar.svg'
 
 
 const TestimonialCard = ({ name, imageSrc, comment, ratings }) => {
+
+    const renderRatings = (ratings) => {
+        let stars = [];
+        for(let i=0; i < ratings; i++){
+            stars.push(<Image key={i} src={star} boxSize={'25px'}></Image>);
+        }
+        return stars;
+    }
     return (
         <VStack
             color="Dark"
@@ -10,25 +19,25 @@ const TestimonialCard = ({ name, imageSrc, comment, ratings }) => {
             cursor="pointer"
             borderRadius={16}
         >
-
-            <HStack spacing={4} p={4} justifyContent="flex-start" width={"100%"}>
-                <Heading as="h3" size="md" color="secundary">
+            <VStack spacing={4} p={3} alignItems={'flex-start'} width={"100%"}>
+                <Heading as="h3" fontSize={'18'} fontFamily={'Karla'}>
                     {name}
                 </Heading>
-            </HStack>
-            <Text color="black" fontSize="lg" pr={4} pl={4}>
-                {comment}
-            </Text>
+                <HStack p>
+                    <Avatar src={imageSrc} width={'65px'} height={'65px'} objectFit={'cover'}/>
+                    <Text hyphens={'auto'}>
+                        {comment}
+                    </Text>
+                </HStack>
             <HStack display="flex" gap={8} justifyContent="flex-start" width={"100%"} pt={2} pb={2}>
-                <HStack spacing={2} pl={4}>
-                    <p>Source Code</p>
-
-                </HStack>{" "}
-                <HStack spacing={2}>
-                    <p>Live Demo</p>
+                <HStack spacing={2} >
+                    {
+                        renderRatings(ratings)
+                    }
 
                 </HStack>
             </HStack>
+            </VStack>
         </VStack>
     );
 };

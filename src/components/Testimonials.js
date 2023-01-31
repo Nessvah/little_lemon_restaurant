@@ -11,9 +11,9 @@ const Testimonials = () => {
                <Box display={'grid'} gridTemplateColumns={'repeat(4, minmax(0,1fr))'} gridGap={4}>
                    {testimonialData.map((testimonial) => {
                        return (
-                           <TestimonialCard key={testimonial.image}
+                           <TestimonialCard key={testimonial.getImageSrc()}
                                             name={testimonial.name}
-                                            imageSrc={testimonial.image}
+                                            imageSrc={testimonial.getImageSrc()}
                                             comment={testimonial.comment}
                                             ratings={testimonial.ratings}
                            />
