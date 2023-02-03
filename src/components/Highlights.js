@@ -6,7 +6,9 @@ const Highlights = () => {
   return (
     <Box w={"860px"} m={"4rem auto 8rem auto"}>
       <HStack spacing={2} justifyContent={"space-between"} mb={"4rem"}>
-        <Heading as={"h2"}>This weeks specials!</Heading>
+        <Heading as={"h2"} fontWeight={"regular"} fontSize={40}>
+          This weeks specials!
+        </Heading>
         <Button
           bg={"Yellow"}
           fontSize={18}
@@ -37,7 +39,7 @@ const Highlights = () => {
             <SaladCard
               key={menu.getImageSrc()}
               name={menu.name}
-              imageSrc={menu.price}
+              imageSrc={menu.getImageSrc()}
               description={menu.description}
               delivery={menu.delivery}
               price={menu.price}

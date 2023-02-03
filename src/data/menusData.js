@@ -9,7 +9,7 @@ const menus = [
     delivery: "Order delivery",
   },
   {
-    getImageSrc: () => require("../images/bruchetta.svg"),
+    getImageSrc: () => require("../images/bruchetta.png"),
     name: "Bruchetta",
     price: "$5.99",
     description:
