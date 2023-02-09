@@ -48,13 +48,15 @@ const BookingForm = () => {
                         <FormControl display={'grid'} w={'100%'} >
                             <FormLabel htmlFor="guests" fontWeight={'extrabold'} fontSize={'20px'}>Number of people</FormLabel>
                             <Input name="guests" value={contactInfo.guests} type="number" onChange={handleChange}
-                                   placeholder="1" min="1" max="10" id="guests" mb={8}/>
+                                   placeholder="1" min="1" max="10" id="guests" mb={8} required/>
 
                             <FormLabel htmlFor="res-date" fontWeight={'extrabold'} fontSize={'20px'}>Date</FormLabel>
-                            <Input name={'date'} value={contactInfo.date} onChange={handleChange}  type="date" id="res-date" mb={8}/>
+                            <Input name={'date'} value={contactInfo.date} onChange={handleChange}  type="date"
+                                   id="res-date" mb={8} required/>
 
                             <FormLabel htmlFor="res-time" fontWeight={'extrabold'} fontSize={'20px'}>Time</FormLabel>
-                            <Select value={contactInfo.time} onChange={handleChange}  id="res-time" mb={2}  className={'input'} name={'time'}>
+                            <Select value={contactInfo.time} onChange={handleChange}  id="res-time" mb={2}
+                                    className={'input'} name={'time'} required>
                                 <option>17:00</option>
                                 <option>18:00</option>
                                 <option>19:00</option>
@@ -66,15 +68,15 @@ const BookingForm = () => {
 
                             <FormLabel htmlFor="firstname" fontWeight={'extrabold'} fontSize={'20px'} mt={8}>First Name</FormLabel>
                             <Input name={'firstName'} value={contactInfo.firstName} onChange={handleChange}
-                                   type="text" placeholder="Your first name" id="firstname" mb={8}/>
+                                   type="text" placeholder="Your first name" id="firstname" mb={8} required/>
 
                             <FormLabel htmlFor="lastname" fontWeight={'extrabold'} fontSize={'20px'}>Last Name</FormLabel>
                             <Input name={'lastName'} value={contactInfo.lastName} onChange={handleChange}
-                                   type="text" placeholder="Your last name" id="lastname" mb={8}/>
+                                   type="text" placeholder="Your last name" id="lastname" mb={8} required/>
 
                             <FormLabel htmlFor="phonenumber" fontWeight={'extrabold'} fontSize={'20px'}>Phone Number</FormLabel>
                             <Input name={'phoneNumber'} value={contactInfo.phoneNumber} onChange={handleChange}
-                                   type="text" placeholder="Your phone number"  id="phonenumber" mb={8}/>
+                                   type="text" placeholder="Your phone number"  id="phonenumber" mb={8} required/>
 
                             <Button type="submit" value="Make Your reservation" width="full" bg={"Yellow"}
                                     fontSize={18}
@@ -103,7 +105,7 @@ const BookingForm = () => {
                         <FontAwesomeIcon icon={faChampagneGlasses} size='1x' className={'icon'}/>Occasion</FormLabel>
                     <Select name={'occasion'} onChange={handleChange}  id="occasion"
                             backgroundColor={'White'} fontSize={'20px'} color={'Green'}
-                            borderRadius={16}>
+                            borderRadius={16} required>
                         <option value={"birthday"}>Birthday</option>
                         <option value={"engagement"}>Engagement</option>
                         <option value={"anniversary"}>Anniversary</option>
