@@ -12,14 +12,3 @@ code {
     monospace;
 }
 
-.header{
-  height: 10vh;
-  width: 100%;
-}
-
-.backImg:hover {
-  position:absolute;
-  top: 80px;
-  right: 130px;
-  z-index: 5;
-}

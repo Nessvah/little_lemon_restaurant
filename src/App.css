@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  height: 10vh;
+  width: 100%;
+}
+
+.backImg:hover {
+  position:absolute;
+  top: 80px;
+  right: 130px;
+  z-index: 5;
+}
+
+.icon {
+  padding-right: 1rem;
+}
+
+.submit-icon {
+  padding-left: 1rem;
+}
+
+.form{
+  width: 450px;
+  max-width: 100%;
+}
+
+.input {
+  background-color: #D9D9D9;
+  border-radius: 16px;
+  color: #727070;
+}
