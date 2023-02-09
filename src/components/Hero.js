@@ -1,9 +1,18 @@
 import { VStack, HStack, Heading, Text, Button, Image, Stack} from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 import FullScreen from "./FullScreen";
 import Img from '../images/restauranfood.jpg';
 
 
 const Hero = () => {
+
+
+    // create navigation through the button element
+    let navigate = useNavigate();
+    const routeChange = () => {
+        let path = `/reservations`;
+        navigate(path);
+    }
     return (
         <header>
             <FullScreen>
@@ -21,7 +30,7 @@ const Hero = () => {
                             modern Twist.</Text>
 
                         {/* change color for focus outline */}
-                        <Button bg={'Yellow'} fontSize={18} color={'Dark'} fontWeight={'regular'}
+                        <Button onClick={routeChange} bg={'Yellow'} fontSize={18} color={'Dark'} fontWeight={'regular'}
                                 _hover={{ bg: '#FEE361' }}
                                 _active={{
                                     bg: '#DBB602',
@@ -34,13 +43,13 @@ const Hero = () => {
                                 }}>Reserve a table</Button>
                     </VStack>
                         <Image
-                            h={'380px'}
+                            h={'400px'}
                             objectFit='cover'
                             borderRadius={'16'}
                             src={Img}
                             alt='Chef at restaurant holding dish'
                             position={'absolute'}
-                            top={10}
+                            top={'60px'}
                             right={0}/>
                 </HStack>
 
