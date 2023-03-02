@@ -1,3 +1,71 @@
+<h1 align="center" id="title">Little Lemon Restaurant</h1>
+
+<p align="center"><img src="https://socialify.git.ci/Nessvah/little_lemon_restaurant/image?font=Inter&amp;issues=1&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Formal%20Invitation&amp;pulls=1&amp;theme=Auto" alt="project-image"></p>
+
+<p id="description">Capstone Project for the Meta Front-End specialization. In this project the goal was to solve a real world problem where the owner of the Little Lemon Restaurant has a website for their business but their clients would love to be able to reserve a table online.</p>
+
+<p align="center"><img src="https://img.shields.io/github/issues/nessvah/little_lemon_restaurant" alt="shields">&nbsp;<img src="https://img.shields.io/github/issues-pr/nessvah/little_lemon_restaurant" alt="shields">&nbsp;<img src="https://img.shields.io/github/license/nessvah/little_lemon_restaurant" alt="shields">
+  <br/>
+  <img src="https://img.shields.io/twitter/follow/nessvah_?label=follow%20me&amp;style=social" alt="shields">&nbsp;<img src="https://img.shields.io/github/followers/nessvah?style=social" alt="shields">
+  <br/>
+  <img src="https://img.shields.io/website?down_message=Offline&amp;up_message=Online&amp;url=https%3A%2F%2Fvercel.com%2Fnessvah%2Flittle-lemon-restaurant-app" alt="shields"></p>
+
+<h2>🚀 Demo</h2>
+
+[LIVE DEMO](https://little-lemon-restaurant-app.vercel.app/)
+
+<!-- 
+<h2>Project Screenshots:</h2>
+
+<img src="" alt="project-screenshot" width="400" height="400/">
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Feature
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Fork</p>
+
+```
+npm fork
+```
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   HTML & CSS
+*   React
+*   Formik
+*   Yup
+*   NPM
+*   Chakra UI
+
+<h2>🛡️ License:</h2>
+
+This project is licensed under the MIT
+
+<h2>💖Like my work?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,13 +137,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-## React Router- Navigate between multiple components within react.
-
-! Note, this is a simple example. It's also still client-side rendering, which is not good for SEO. If you're trying to make a "real" website, check out NextJS or Gatsby.
-
-## Technologies used:
-- React
-- Chakra UI
-- Formik
-- Yup
+123. 
+124. ## React Router- Navigate between multiple components within react.
+125. 
+126. ! Note, this is a simple example. It's also still client-side rendering, which is not good for SEO. If you're trying to make a "real" website, check out NextJS or Gatsby.
+127. 
+128. ## Technologies used:
+129. - React
+130. - Chakra UI
+131. - Formik
+132. - Yup
+-->
