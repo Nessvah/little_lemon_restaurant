@@ -13,138 +13,78 @@
 <h2>🚀 Demo</h2>
 
 [LIVE DEMO](https://little-lemon-restaurant-app.vercel.app/)
+[figma](https://www.figma.com/file/417kpJ5iZg6U0gZWpi0udz/Front-end-Capstone-Meta?t=He5tuCGmVUNBtZO5-1)
 
-<!-- 
-<h2>Project Screenshots:</h2>
+## Table Of Contents
 
-<img src="" alt="project-screenshot" width="400" height="400/">
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+* [License](#license)
+* [Authors](#authors)
+* [Acknowledgements](#acknowledgements)
 
-  
-  
-<h2>🧐 Features</h2>
+## About The Project
 
-Here're some of the project's best features:
+The brand style guide was provided and with it I was able to do the wireframe, prototype and create some components using Figma. 
+[Figma file](https://www.figma.com/files/recent?fuid=1136340015527445765)
 
-*   Feature
 
-<h2>🛠️ Installation Steps:</h2>
+### Screenshots
 
-<p>1. Fork</p>
+![Figma Design](src/images/little_lemon_web1)
 
+
+
+
+### Requirements
+
+- Follow the design spec (Figma file)
+- Render the three menu options using Javascript
+- Be able to add/remove items
+- Have a payment modal with compulsory form inputs
+
+### Stretch goals (optional)
+
+- [ ] Offer a "meal deal" discount
+- [ ] Allow users to rate their experience
+
+### Optimizations/Problems to solve (optional):
+- [ ] The form doesn't work as expected. Although it has required attr, the event listener overlaps, and the user can "submit" the form with empty fields.
+
+## Built With
+
+
+
+## Getting Started
+
+
+### Prerequisites
+
+* npm
+
+Quick start:
+
+```sh
+$ npm install
+$ npm start
 ```
-npm fork
-```
 
-  
-  
-<h2>💻 Built with</h2>
+### Creating A Pull Request
 
-Technologies used in the project:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-*   HTML & CSS
-*   React
-*   Formik
-*   Yup
-*   NPM
-*   Chakra UI
+## License
 
-<h2>🛡️ License:</h2>
+Distributed under the License. See [LICENSE]() for more information.
 
-This project is licensed under the MIT
+## Authors
 
-<h2>💖Like my work?</h2>
+* **Sílvia Vanessa** - *Software Developer* - [Sílvia Vanessa](https://github.com/Nessvah)
 
 
-
-
-
-
-
-
-
-
-
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-123. 
-124. ## React Router- Navigate between multiple components within react.
-125. 
-126. ! Note, this is a simple example. It's also still client-side rendering, which is not good for SEO. If you're trying to make a "real" website, check out NextJS or Gatsby.
-127. 
-128. ## Technologies used:
-129. - React
-130. - Chakra UI
-131. - Formik
-132. - Yup
--->
