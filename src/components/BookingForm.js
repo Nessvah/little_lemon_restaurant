@@ -59,7 +59,6 @@ const BookingForm = () => {
     }),
   });
 
-  //
   useEffect(() => {
     if (response) {
       onOpen(response.type, response.message);
@@ -67,7 +66,7 @@ const BookingForm = () => {
         formik.resetForm();
       }
     }
-  }, [response]);
+  });
 
   return (
     <Box w={"860px"} m={"4rem auto 8rem auto"}>
