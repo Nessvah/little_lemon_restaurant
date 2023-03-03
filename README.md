@@ -2,7 +2,8 @@
 
 <p align="center"><img src="https://socialify.git.ci/Nessvah/little_lemon_restaurant/image?font=Inter&amp;issues=1&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Formal%20Invitation&amp;pulls=1&amp;theme=Auto" alt="project-image"></p>
 
-<p id="description">Capstone Project for the Meta Front-End specialization. In this project the goal was to solve a real world problem where the owner of the Little Lemon Restaurant has a website for their business but their clients would love to be able to reserve a table online.</p>
+<p id="description">Capstone Project, for the Meta Front-End specialization. In this project, the goal was to solve a real-world problem where the owner of the Little Lemon Restaurant has a website for their business but their clients would love to be able to reserve a table online.
+</p>
 
 <p align="center"><img src="https://img.shields.io/github/issues/nessvah/little_lemon_restaurant" alt="shields">&nbsp;<img src="https://img.shields.io/github/issues-pr/nessvah/little_lemon_restaurant" alt="shields">&nbsp;<img src="https://img.shields.io/github/license/nessvah/little_lemon_restaurant" alt="shields">
   <br/>
