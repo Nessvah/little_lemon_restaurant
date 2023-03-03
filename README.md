@@ -13,56 +13,77 @@
 <h2>🚀 Demo</h2>
 
 [LIVE DEMO](https://little-lemon-restaurant-app.vercel.app/)
-[figma](https://www.figma.com/file/417kpJ5iZg6U0gZWpi0udz/Front-end-Capstone-Meta?t=He5tuCGmVUNBtZO5-1)
 
 ## Table Of Contents
 
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-* [License](#license)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
+- [Table Of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Screenshots](#screenshots)
+    - [Main page](#main-page)
+    - [Booking page](#booking-page)
+  - [Requirements](#requirements)
+  - [Optimizations/Problems to solve:](#optimizationsproblems-to-solve)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Creating A Pull Request](#creating-a-pull-request)
+- [License](#license)
+- [Authors](#authors)
+
+<hr/>
 
 ## About The Project
 
-The brand style guide was provided and with it I was able to do the wireframe, prototype and create some components using Figma. 
-[Figma file](https://www.figma.com/files/recent?fuid=1136340015527445765)
-
+The brand style guide was provided and with it I was able to do the wireframe, prototype and create some components using Figma.
+[File](https://www.figma.com/files/recent?fuid=1136340015527445765)
 
 ### Screenshots
 
-![Figma Design](src/images/little_lemon_web1)
+#### Main page
 
+![Main page](src/images/little_lemon_web2.png)
 
+#### Booking page
 
+![Booking page](src/images/little_lemon_web1.png)
 
 ### Requirements
 
-- Follow the design spec (Figma file)
-- Render the three menu options using Javascript
-- Be able to add/remove items
-- Have a payment modal with compulsory form inputs
+- Follow the brand style guide provided and do the wireframe + prototype (Figma file)
+- Make use of semantic tags
+- Use Open Graph Protocol
+- Implement some of the things learned in React (hooks, useEffect, useState, controled components,...)
+- Using git version control during the development of the project
+- Implement unit tests using Jest
 
-### Stretch goals (optional)
+### Optimizations/Problems to solve:
 
-- [ ] Offer a "meal deal" discount
-- [ ] Allow users to rate their experience
+- [ ] make it responsive for all screens
+- [ ] show alert when submiting form
+- [ ] better unit tests
+- [ ] better the performance/speed of the page on page load
+- [ ] images optimizations
+- [ ] switch the map image for a real map (leaftlet e.g.)
 
-### Optimizations/Problems to solve (optional):
-- [ ] The form doesn't work as expected. Although it has required attr, the event listener overlaps, and the user can "submit" the form with empty fields.
+<hr/>
 
 ## Built With
 
+- HTML & CSS
+- JavaScript - React
+- Chakra UI
+- Formik and Yup (form validation)
+- Jest
 
+<hr/>
 
 ## Getting Started
 
-
 ### Prerequisites
 
-* npm
+You need to have npm installed.
+
+- npm
 
 Quick start:
 
@@ -79,12 +100,14 @@ $ npm start
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+<hr/>
+
 ## License
 
 Distributed under the License. See [LICENSE]() for more information.
 
+<hr/>
+
 ## Authors
 
-* **Sílvia Vanessa** - *Software Developer* - [Sílvia Vanessa](https://github.com/Nessvah)
-
-
+- **Sílvia Vanessa** - _Software Developer_ - [Sílvia Vanessa](https://github.com/Nessvah)
