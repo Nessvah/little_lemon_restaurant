@@ -39,7 +39,7 @@ const BookingForm = () => {
       phoneNumber: "",
     },
     onSubmit: (values) => {
-      submit("https://john.com/contactme", values);
+      submit("", values);
     },
     //validate form inputs
     validationSchema: Yup.object({
