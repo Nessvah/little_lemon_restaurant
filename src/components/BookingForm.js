@@ -59,14 +59,14 @@ const BookingForm = () => {
     }),
   });
 
-  useEffect(() => {
-    if (response) {
-      onOpen(response.type, response.message);
-      if (response.type === "success") {
-        formik.resetForm();
-      }
-    }
-  });
+  // useEffect(() => {
+  //   if (response) {
+  //     onOpen(response.type, response.message);
+  //     if (response.type === "success") {
+  //       formik.resetForm();
+  //     }
+  //   }
+  // });
 
   return (
     <Box w={"860px"} m={"4rem auto 8rem auto"}>
