@@ -1,6 +1,6 @@
 const menus = [
   {
-    getImageSrc: () => require("../images/greeksalad.jpg"),
+    getImageSrc: () => require("../images/greeksalad2.webp"),
     name: "Greek Salad",
     price: "$12.99",
     description:
@@ -9,7 +9,7 @@ const menus = [
     delivery: "Order delivery",
   },
   {
-    getImageSrc: () => require("../images/bruchetta.png"),
+    getImageSrc: () => require("../images/bruchetta2.webp"),
     name: "Bruchetta",
     price: "$5.99",
     description:

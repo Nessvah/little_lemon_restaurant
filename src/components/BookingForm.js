@@ -25,7 +25,7 @@ const BookingForm = () => {
   const { isLoading, response, submit } = useSubmit();
 
   // Set alert for submission
-  const { onOpen } = useAlertContext();
+  // const { onOpen } = useAlertContext();
 
   // use formik for validation
   const formik = useFormik({
