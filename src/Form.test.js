@@ -3,8 +3,6 @@ import BookingForm from "./components/BookingForm";
 import * as user from "@testing-library/user-event/dist/type";
 import userEvent from "@testing-library/user-event";
 
-// Test if the Booking component renders correctly on page
-
 describe("Booking component", () => {
   it("should render Booking component correctly", () => {
     render(<BookingForm />);

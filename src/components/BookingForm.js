@@ -17,16 +17,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import useSubmit from "../hooks/useSubmit";
-import { useAlertContext } from "../context/alertContext";
-import React, { useEffect } from "react";
 
 const BookingForm = () => {
-  const { isLoading, response, submit } = useSubmit();
-
-  // Set alert for submission
-  // const { onOpen } = useAlertContext();
-
   // use formik for validation
   const formik = useFormik({
     initialValues: {
@@ -39,7 +31,8 @@ const BookingForm = () => {
       phoneNumber: "",
     },
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      const data = JSON.stringify(values, null, 2);
+      console.log(data);
     },
     //validate form inputs
     validationSchema: Yup.object({
@@ -247,7 +240,6 @@ const BookingForm = () => {
             </FormControl>
 
             <Button
-              isLoading={isLoading}
               type="submit"
               value="Make Your reservation"
               width="full"
