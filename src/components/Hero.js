@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import FullScreen from "./FullScreen";
-import Img from "../images/restauranfood.jpg";
+import Img from "../images/restauranfood2.webp";
 
 const Hero = () => {
   // create navigation through the button element

@@ -39,7 +39,7 @@ const BookingForm = () => {
       phoneNumber: "",
     },
     onSubmit: (values) => {
-      submit("", values);
+      alert(JSON.stringify(values, null, 2));
     },
     //validate form inputs
     validationSchema: Yup.object({
@@ -58,15 +58,6 @@ const BookingForm = () => {
         .required("Required"),
     }),
   });
-
-  // useEffect(() => {
-  //   if (response) {
-  //     onOpen(response.type, response.message);
-  //     if (response.type === "success") {
-  //       formik.resetForm();
-  //     }
-  //   }
-  // });
 
   return (
     <Box w={"860px"} m={"4rem auto 8rem auto"}>

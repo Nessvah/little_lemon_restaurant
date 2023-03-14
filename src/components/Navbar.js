@@ -24,7 +24,7 @@ const Navbar = () => {
           <UnorderedList styleType={"none"}>
             <HStack gap={6} fontWeight={"bold"} color={"Dark"}>
               <ListItem>
-                <p> Home</p>
+                <Link to={"/"}> Home</Link>
               </ListItem>
               <ListItem>
                 <p>About</p>
