@@ -4,17 +4,16 @@ import PageNotFound from "./pages/PageNotFound";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { ChakraProvider } from "@chakra-ui/react";
-import { AlertProvider } from "./context/alertContext";
 import brand from "./styles/brand";
 import "@fontsource/markazi-text";
 import "@fontsource/karla";
 import "./App.css";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
     <ChakraProvider resetCSS theme={brand}>
-      <AlertProvider>
         <Navbar />
         <Routes>
           {/*index path - the component to go to*/}
@@ -23,7 +22,6 @@ function App() {
           <Route path={"*"} element={<PageNotFound />} />
         </Routes>
         <Footer />
-      </AlertProvider>
     </ChakraProvider>
   );
 }

@@ -17,8 +17,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import useSubmit from "../hooks/useSubmit";
 
 const BookingForm = () => {
+  // use custom hook for submiting data
+  const { submit } = useSubmit();
   // use formik for validation
   const formik = useFormik({
     initialValues: {
@@ -30,9 +33,14 @@ const BookingForm = () => {
       lastName: "",
       phoneNumber: "",
     },
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       const data = JSON.stringify(values, null, 2);
-      console.log(data);
+
+      try {
+        await submit(data);
+      } catch (error) {
+       console.error(error.message)
+      }
     },
     //validate form inputs
     validationSchema: Yup.object({

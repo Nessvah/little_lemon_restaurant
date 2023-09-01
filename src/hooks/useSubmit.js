@@ -1,34 +1,52 @@
 import { useState } from "react";
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+// this will mock an api call
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
  * This is a custom hook that can be used to submit a form and simulate an API call
  * It uses Math.random() to simulate a random success or failure, with 50% chance of each
  */
+
 const useSubmit = () => {
     const [isLoading, setLoading] = useState(false);
-    const [response, setResponse] = useState(null);
+    const [response] = useState(null);
 
-    const submit = async (url, data) => {
-        const random = Math.random();
+
+    const submit = async (data) => {
+
+        const dataObj = JSON.parse(data);
+
+        const toastOptions = {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        };
+        const notifySuccess = () =>toast.success(`Thanks for your submission ${dataObj.firstName},
+         we will  get back to you shortly!`, toastOptions);
+
+        const notifyError = () => toast.error("Something went wrong, please try again later!", toastOptions)
+
         setLoading(true);
         try {
-            await wait(2000);
+            await wait(500);
+            const random = Math.random();
             if (random < 0.5) {
                 throw new Error("Something went wrong");
             }
-            setResponse({
-                type: "success",
-                message: `Thanks for your submission ${data.firstName}, we will get back to you shortly!`,
-            });
+            console.log(data)
+           notifySuccess();
         } catch (error) {
-            setResponse({
-                type: "error",
-                message: "Something went wrong, please try again later!",
-            });
+           notifyError();
         } finally {
-            setLoading(true);
+            setLoading(false); // when done, this can go back to false since its not loading anymore
         }
     };
 
