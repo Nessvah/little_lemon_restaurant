@@ -5,12 +5,13 @@ import Adrian from "../images/restaurantchef_B2.webp";
 const About = () => {
   return (
     <HStack
-      w={"860px"}
+      maxW={"860px"}
       minH={"fit-content"}
-      m={"4rem auto 10rem auto"}
+      m={"4rem 2rem 10rem 2rem"}
       alignItems={"flex-start"}
       position={"relative"}
       justifyContent={"space-between"}
+      flexDir={{sm: "column", md: "row"}}
     >
       <VStack spacing={6} alignItems={"flex-start"}>
         {/* Get this two headings closer to each other */}
