@@ -7,13 +7,13 @@ const About = () => {
     <HStack
       maxW={"860px"}
       minH={"fit-content"}
-      m={"4rem 2rem 10rem 2rem"}
-      alignItems={"flex-start"}
+      m={{sm: "4rem 2rem 10rem 2rem", md: "4rem, 2rem !important", lg: "4rem, auto, 10rem, auto !important"}}
+      alignItems={"center"}
       position={"relative"}
       justifyContent={"space-between"}
       flexDir={{sm: "column", md: "row"}}
     >
-      <VStack spacing={6} alignItems={"flex-start"}>
+      <VStack spacing={6} alignItems={"flex-start"} paddingLeft={"1rem"}>
         {/* Get this two headings closer to each other */}
         <Heading as={"h2"} fontSize={52} fontWeight={"regular"} color={"Green"}>
           Little Lemon
@@ -30,7 +30,7 @@ const About = () => {
           phasellus faucibus scelerisque eleifend donec pretium vulputate.
         </Text>
       </VStack>
-      <HStack justifyContent={"flex-end"} position={"relative"}>
+      <HStack justifyContent={"flex-end"} position={"relative"} paddingRight={"1rem"}>
         <Image
           w={"50%"}
           h={"350px"}
