@@ -21,10 +21,14 @@ const Hero = () => {
   return (
     <header>
       <FullScreen>
-        <HStack position={"relative"} w={"860px"}>
+        <HStack
+          position={"relative"}
+          maxW={"860px"}
+          flexDirection={{ sm: "column", md: "column" }}
+        >
           <VStack
-            w={"40%"}
-            m={"2rem auto 2rem 0"}
+            w={{ sm: "70%", lg: "40%" }}
+            m={{ sm: "2rem auto", lg: "2rem auto 2rem 0" }}
             alignItems={"flex-start"}
             gap={"2rem"}
           >
@@ -34,16 +38,25 @@ const Hero = () => {
                 as={"h1"}
                 fontWeight={"regular"}
                 color={"Yellow"}
-                fontSize={64}
+                fontSize={{ sm: 45, md: 54, lg: 64 }}
               >
                 Little Lemon
               </Heading>
-              <Heading as={"h2"} fontWeight={"regular"} fontSize={40} mt={0}>
+              <Heading
+                as={"h2"}
+                fontWeight={"regular"}
+                fontSize={{ sm: 32, md: 40 }}
+                mt={0}
+              >
                 Chicago
               </Heading>
             </Stack>
 
-            <Text fontWeight={"extrabold"} fontSize={20} mt={32}>
+            <Text
+              fontWeight={"extrabold"}
+              fontSize={{ sm: 18, md: 20 }}
+              mt={32}
+            >
               We are a family owned Meditarrean restaurant, focused on
               traditional recipes served with a modern Twist.
             </Text>
@@ -71,12 +84,13 @@ const Hero = () => {
           </VStack>
           <Image
             h={"380px"}
-            w={"33%"}
+            w={{ sm: "80%", md: "80%", lg: "33%" }}
             objectFit="cover"
             borderRadius={"16"}
             src={Img}
             alt="Chef at restaurant holding dish"
-            position={"absolute"}
+            position={{ md: "", lg: "absolute" }}
+            marginBottom={{ sm: "16px !important", md: 0 }}
             top={"60px"}
             right={0}
           />
