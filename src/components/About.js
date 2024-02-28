@@ -7,7 +7,7 @@ const About = () => {
     <HStack
       maxW={"860px"}
       minH={"fit-content"}
-      m={{sm: "4rem 2rem 10rem 2rem", md: "4rem, 2rem !important", lg: "4rem, auto, 10rem, auto !important"}}
+      m={{sm: "4rem 2rem 10rem 2rem", md: "4rem 2rem !important", lg: "4rem auto 10rem auto !important"}}
       alignItems={"center"}
       position={"relative"}
       justifyContent={"space-between"}

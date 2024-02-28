@@ -21,7 +21,7 @@ const Footer = () => {
       <FullScreen>
         <HStack
           maxW={"860px"}
-          minW={"70%"}
+          w={{ sm: "80%", md: "100%" }}
           spacing={8}
           mt={"80px"}
           mb={"80px"}

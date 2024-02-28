@@ -1,10 +1,16 @@
-import { HStack, Heading, Box, Button, grid } from "@chakra-ui/react";
+import { HStack, Heading, Box, Button } from "@chakra-ui/react";
 import menusData from "../data/menusData";
 import SaladCard from "./SaladCard";
 
 const Highlights = () => {
   return (
-    <Box maxW={"860px"} m={"4rem 2rem 8rem 2rem"}>
+    <Box
+      maxW={"860px"}
+      m={{
+        sm: "8rem 2rem 8rem 2rem",
+        md: "8rem auto 8rem auto !important",
+      }}
+    >
       <HStack
         spacing={2}
         flexDir={{ sm: "column", md: "row" }}
@@ -45,7 +51,7 @@ const Highlights = () => {
           sm: "minmax(0,1fr)",
           md: "repeat(3, minmax(0,1fr))",
         }}
-        gridGap={{sm: 10, md: 6}}
+        gridGap={{ sm: 10, md: 6 }}
       >
         {menusData.map((menu) => {
           return (
