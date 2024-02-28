@@ -20,14 +20,16 @@ const Footer = () => {
     <footer>
       <FullScreen>
         <HStack
-          w={"860px"}
+          maxW={"860px"}
+          minW={"70%"}
           spacing={8}
           mt={"80px"}
           mb={"80px"}
-          alignItems={"flex-start"}
+          alignItems={{ sm: "center", md: "flex-start" }}
           justifyContent={"space-between"}
+          flexDir={{ sm: "column", md: "row" }}
         >
-          <VStack alignItems={"flex-start"}>
+          <VStack alignItems={"flex-start"} w={"100%"}>
             <Image boxSize={"120px"} src={FooterLogo} alt="Little Lemon logo" />
             <Heading
               as={"h2"}
@@ -50,7 +52,12 @@ const Footer = () => {
               Lemon
             </Heading>
           </VStack>
-          <VStack spacing={4} alignItems={"flex-start"}>
+          <VStack
+            spacing={4}
+            alignItems={"flex-start"}
+            w={"100%"}
+            mt={"2rem !important"}
+          >
             <Heading
               as={"h5"}
               fontFamily={"Karla"}
@@ -69,7 +76,12 @@ const Footer = () => {
               <ListItem>Login</ListItem>
             </UnorderedList>
           </VStack>
-          <VStack spacing={4} alignItems={"flex-start"}>
+          <VStack
+            spacing={4}
+            alignItems={"flex-start"}
+            w={"100%"}
+            mt={"2rem !important"}
+          >
             <Heading
               as={"h5"}
               fontFamily={"Karla"}
@@ -87,7 +99,12 @@ const Footer = () => {
               <p>info@littlelemon.com</p>
             </address>
           </VStack>
-          <VStack spacing={4}>
+          <VStack
+            spacing={4}
+            w={"100%"}
+            alignItems={"flex-start"}
+            mt={"2rem !important"}
+          >
             <Heading
               as={"h5"}
               fontFamily={"Karla"}
