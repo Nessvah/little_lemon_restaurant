@@ -6,20 +6,23 @@ import TestimonialCard from "./TestimonialCard";
 const Testimonials = () => {
   return (
     <FullScreen>
-      <VStack w={"860px"} m={"4rem auto 8rem auto"}>
+      <VStack maxW={"860px"} m={"4rem 2rem 8rem 2rem"}>
         <Heading
           as={"h2"}
-          mb={"4rem"}
+          mb={{ sm: "1.5rem", md: "4rem" }}
           color={"Yellow"}
-          fontSize={"40"}
+          fontSize={{ sm: "30", md: "40" }}
           fontWeight={"regular"}
         >
           Testimonials
         </Heading>
         <Box
           display={"grid"}
-          gridTemplateColumns={"repeat(4, minmax(0,1fr))"}
-          gridGap={4}
+          gridTemplateColumns={{
+            sm: "minmax(0,1fr)",
+            md: "repeat(4, minmax(0,1fr))",
+          }}
+          gridGap={{sm: 8, md:4}}
         >
           {testimonialData.map((testimonial) => {
             return (

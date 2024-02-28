@@ -20,7 +20,7 @@ const TestimonialCard = ({ name, imageSrc, comment, ratings }) => {
       <VStack
         spacing={4}
         p={3}
-        alignItems={"flex-start"}
+        alignItems={{ sm: "center", md: "flex-start" }}
         width={"100%"}
         cursor={"default"}
       >
@@ -35,7 +35,9 @@ const TestimonialCard = ({ name, imageSrc, comment, ratings }) => {
             objectFit={"cover"}
             alt={"profile picture of costumer"}
           />
-          <Text hyphens={"auto"}>{comment}</Text>
+          <Text hyphens={"auto"} marginTop={{ sm: "1rem !important", md: "0" }}>
+            {comment}
+          </Text>
         </HStack>
         <HStack
           display="flex"
@@ -44,8 +46,9 @@ const TestimonialCard = ({ name, imageSrc, comment, ratings }) => {
           width={"100%"}
           pt={2}
           pb={2}
+          flexDir={{sm: "column", md: "row"}}
         >
-          <HStack spacing={1}>{renderRatings(ratings)}</HStack>
+          <HStack spacing={1} >{renderRatings(ratings)}</HStack>
         </HStack>
       </VStack>
     </VStack>
