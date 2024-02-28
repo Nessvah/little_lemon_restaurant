@@ -19,7 +19,11 @@ const SaladCard = ({ imageSrc, name, price, description, delivery }) => {
         boxSize={"100%"}
         objectFit={"cover"}
       />
-      <VStack spacing={2} height={"100%"} alignItems={"flex-start"}>
+      <VStack
+        spacing={2}
+        height={{ sm: "70%", md: "100%" }}
+        alignItems={"flex-start"}
+      >
         <HStack spacing={4} p={4} gap={18}>
           <Heading as="h3" fontSize={18} fontFamily={"Karla"}>
             {name}

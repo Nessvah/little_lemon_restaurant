@@ -1,12 +1,22 @@
-import { HStack, Heading, Box, Button } from "@chakra-ui/react";
+import { HStack, Heading, Box, Button, grid } from "@chakra-ui/react";
 import menusData from "../data/menusData";
 import SaladCard from "./SaladCard";
 
 const Highlights = () => {
   return (
-    <Box w={"860px"} m={"4rem auto 8rem auto"}>
-      <HStack spacing={2} justifyContent={"space-between"} mb={"4rem"}>
-        <Heading as={"h2"} fontWeight={"regular"} fontSize={40}>
+    <Box maxW={"860px"} m={"4rem 2rem 8rem 2rem"}>
+      <HStack
+        spacing={2}
+        flexDir={{ sm: "column", md: "row" }}
+        justifyContent={"space-between"}
+        mb={"4rem"}
+      >
+        <Heading
+          as={"h2"}
+          fontWeight={"regular"}
+          fontSize={{ sm: 30, lg: 40 }}
+          marginBottom={{ sm: "1rem", md: "0" }}
+        >
           This weeks specials!
         </Heading>
         <Button
@@ -31,8 +41,11 @@ const Highlights = () => {
 
       <Box
         display={"grid"}
-        gridTemplateColumns={"repeat(3, minmax(0,1fr))"}
-        gridGap={4}
+        gridTemplateColumns={{
+          sm: "minmax(0,1fr)",
+          md: "repeat(3, minmax(0,1fr))",
+        }}
+        gridGap={{sm: 10, md: 6}}
       >
         {menusData.map((menu) => {
           return (
