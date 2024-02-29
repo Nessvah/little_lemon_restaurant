@@ -47,7 +47,9 @@ const BookingForm = () => {
     validationSchema: Yup.object({
       //occasion
       guests: Yup.string().min(1).required("Required"),
-      date: Yup.date().min(new Date(), "The date entered is invalid.").required("Required"),
+      date: Yup.date()
+        .min(new Date(), "The date entered is invalid.")
+        .required("Required"),
       //time
       firstName: Yup.string()
         .min(2, "You need at least 2 letters")
@@ -71,8 +73,8 @@ const BookingForm = () => {
       <Heading
         as={"h2"}
         fontWeight={"regular"}
-        fontSize={40}
-        mb={16}
+        fontSize={{ sm: 35, md: 40 }}
+        mb={{sm: 8, md:16}}
         maxW={"80%"}
         pl={{ sm: 4, md: 0 }}
       >
@@ -84,7 +86,7 @@ const BookingForm = () => {
         justifyContent={{ sm: "center", md: "space-between" }}
       >
         <Flex
-          w={{sm:"70%", md: "100%"}}
+          w={{ sm: "70%", md: "100%" }}
           alignItems={{ sm: "center", md: "flex-start" }}
           justifyContent={{ sm: "center" }}
           m={{ sm: "0 auto", md: "0 auto" }}
@@ -94,7 +96,12 @@ const BookingForm = () => {
             className={"form"}
             onSubmit={formik.handleSubmit}
           >
-            <HStack spacing={8} minW={"30rem"}>
+            <Flex
+              spacing={4}
+              minW={{ sm: "100%", md: "30rem" }}
+              flexDir={{ sm: "column-reverse", md: "row"}}
+              gap={{ sm: 4 }}
+            >
               <FormControl
                 isRequired
                 isInvalid={!!formik.errors.guests && formik.touched.guests}
@@ -111,7 +118,7 @@ const BookingForm = () => {
                   type="number"
                   placeholder="1"
                   id="guests"
-                  mb={8}
+                  mb={4}
                   {...formik.getFieldProps("guests")}
                 />
                 <FormErrorMessage>{formik.errors.guests}</FormErrorMessage>
@@ -128,7 +135,7 @@ const BookingForm = () => {
                   fontWeight={"extrabold"}
                   fontSize={"20px"}
                   color={"Green"}
-                  mt={"1rem"}
+                  mr={0}
                 >
                   <FontAwesomeIcon
                     icon={faChampagneGlasses}
@@ -151,7 +158,7 @@ const BookingForm = () => {
                   <option value="anniversary">Anniversary</option>
                 </Select>{" "}
               </FormControl>
-            </HStack>
+            </Flex>
 
             <FormControl
               isRequired
