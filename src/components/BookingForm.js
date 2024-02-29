@@ -32,7 +32,7 @@ const BookingForm = () => {
       lastName: "",
       phoneNumber: "",
     },
-    onSubmit: async (values) => {
+    onSubmit: async (values, { resetForm }) => {
       const data = JSON.stringify(values, null, 2);
 
       try {
@@ -40,6 +40,8 @@ const BookingForm = () => {
       } catch (error) {
         console.error(error.message);
       }
+
+      resetForm();
     },
     //validate form inputs
     validationSchema: Yup.object({
@@ -72,7 +74,7 @@ const BookingForm = () => {
         as={"h2"}
         fontWeight={"regular"}
         fontSize={{ sm: 35, md: 40 }}
-        mb={{sm: 8, md:16}}
+        mb={{ sm: 8, md: 16 }}
         maxW={"80%"}
         pl={{ sm: 4, md: 0 }}
       >
@@ -97,7 +99,7 @@ const BookingForm = () => {
             <Flex
               spacing={4}
               minW={{ sm: "100%", md: "30rem" }}
-              flexDir={{ sm: "column-reverse", md: "row"}}
+              flexDir={{ sm: "column-reverse", md: "row" }}
               gap={{ sm: 4 }}
             >
               <FormControl

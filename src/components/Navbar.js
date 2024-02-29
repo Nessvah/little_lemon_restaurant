@@ -1,15 +1,9 @@
 // Navbar.js
 import { useState } from "react";
-import {
-  Flex,
-  Spacer,
-  Image,
-  useDisclosure,
-  VStack,
-  Link,
-} from "@chakra-ui/react";
+import { Flex, Spacer, Image, useDisclosure, VStack } from "@chakra-ui/react";
 import Logo from "../images/Logo.svg";
 import { FaHamburger } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -40,14 +34,17 @@ const Navbar = () => {
       justify="space-between"
       padding="1rem"
       color={"Dark"}
+      position={"relative"}
     >
       <Flex align="center">
-        <Image
-          width={"150px"}
-          objectFit={"cover"}
-          src={Logo}
-          alt={"Little Lemon logo"}
-        />
+        <Link to={"/"}>
+          <Image
+            width={"150px"}
+            objectFit={"cover"}
+            src={Logo}
+            alt={"Little Lemon logo"}
+          />
+        </Link>
       </Flex>
 
       {isMobile ? (
@@ -66,7 +63,7 @@ const Navbar = () => {
       {isMobile ? (
         <VStack
           pos="absolute"
-          top="90px"
+          top={"10vh"}
           left={0}
           right={0}
           bg="whitesmoke"

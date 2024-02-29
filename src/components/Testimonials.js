@@ -11,7 +11,7 @@ const Testimonials = () => {
           as={"h2"}
           mb={{ sm: "1.5rem", md: "4rem" }}
           color={"Yellow"}
-          fontSize={{ sm: "30", md: "40" }}
+          fontSize={40}
           fontWeight={"regular"}
         >
           Testimonials

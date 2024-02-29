@@ -28,14 +28,18 @@ const Footer = () => {
           justifyContent={"space-between"}
           flexDir={{ sm: "column", md: "row" }}
         >
-          <VStack alignItems={"flex-start"} w={"100%"} ml={8} >
-            <Image boxSize={"120px"} src={FooterLogo} alt="Little Lemon logo" />
+          <VStack alignItems={"flex-start"} w={"100%"} ml={8}>
+            <Image
+              boxSize={{ sm: "60px", md: "120px" }}
+              src={FooterLogo}
+              alt="Little Lemon logo"
+            />
             <Heading
               as={"h2"}
               color={"Yellow"}
               fontWeight={"regular"}
               letterSpacing={1.5}
-              fontSize={"40px"}
+              fontSize={{ sm: "30px", md: "40px" }}
               textTransform={"uppercase"}
             >
               Little
@@ -45,7 +49,7 @@ const Footer = () => {
               color={"Yellow"}
               fontWeight={"regular"}
               letterSpacing={1.5}
-              fontSize={"40px"}
+              fontSize={{ sm: "30px", md: "40px" }}
               textTransform={"uppercase"}
             >
               Lemon

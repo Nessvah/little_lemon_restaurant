@@ -7,7 +7,7 @@ const Highlights = () => {
     <Box
       maxW={"860px"}
       m={{
-        sm: "8rem 2rem 8rem 2rem",
+        sm: "4rem 2rem",
         md: "8rem auto 8rem auto !important",
       }}
     >
@@ -20,7 +20,7 @@ const Highlights = () => {
         <Heading
           as={"h2"}
           fontWeight={"regular"}
-          fontSize={{ sm: 30, lg: 40 }}
+          fontSize={40}
           marginBottom={{ sm: "1rem", md: "0" }}
         >
           This weeks specials!

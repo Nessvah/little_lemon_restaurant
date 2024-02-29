@@ -30,14 +30,14 @@ const About = () => {
           phasellus faucibus scelerisque eleifend donec pretium vulputate.
         </Text>
       </VStack>
-      <HStack justifyContent={"flex-end"} position={"relative"} paddingRight={"1rem"}>
+      <HStack justifyContent={"flex-end"} position={"relative"} paddingRight={"1rem"} mt={{sm: "2rem !important"}}>
         <Image
           w={"50%"}
           h={"350px"}
           objectFit={"cover"}
           objectPosition={"75% 10%"}
           borderRadius={"16px"}
-          alt={"Chef's Mario and Adrian admiring their work"}
+          alt={"Chef's Mario and Adrian admiring their work."}
           src={MarioAndAdrian}
           loading="lazy"
         />
