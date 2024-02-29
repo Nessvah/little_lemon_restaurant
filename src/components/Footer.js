@@ -25,11 +25,10 @@ const Footer = () => {
           spacing={8}
           mt={"80px"}
           mb={"80px"}
-          alignItems={{ sm: "center", md: "flex-start" }}
           justifyContent={"space-between"}
           flexDir={{ sm: "column", md: "row" }}
         >
-          <VStack alignItems={"flex-start"} w={"100%"}>
+          <VStack alignItems={"flex-start"} w={"100%"} ml={8} >
             <Image boxSize={"120px"} src={FooterLogo} alt="Little Lemon logo" />
             <Heading
               as={"h2"}

@@ -9,6 +9,7 @@ import {
   Select,
   Heading,
   Box,
+  Flex,
 } from "@chakra-ui/react";
 import {
   faChampagneGlasses,
@@ -39,14 +40,14 @@ const BookingForm = () => {
       try {
         await submit(data);
       } catch (error) {
-       console.error(error.message)
+        console.error(error.message);
       }
     },
     //validate form inputs
     validationSchema: Yup.object({
       //occasion
       guests: Yup.string().min(1).required("Required"),
-      date: Yup.date().min(new Date(), "Invalid date").required("Required"),
+      date: Yup.date().min(new Date(), "The date entered is invalid.").required("Required"),
       //time
       firstName: Yup.string()
         .min(2, "You need at least 2 letters")
@@ -61,22 +62,39 @@ const BookingForm = () => {
   });
 
   return (
-    <Box w={"860px"} m={"4rem auto 8rem auto"}>
-      <Heading as={"h2"} fontWeight={"regular"} fontSize={40} mb={16}>
+    <Flex
+      maxW={"860px"}
+      m={{ sm: "4rem 2rem 8rem 2rem", md: " 4rem auto" }}
+      flexDir={"column"}
+      alignItems={{ sm: "center" }}
+    >
+      <Heading
+        as={"h2"}
+        fontWeight={"regular"}
+        fontSize={40}
+        mb={16}
+        maxW={"80%"}
+        pl={{ sm: 4, md: 0 }}
+      >
         Let's reserve your table
       </Heading>
       <HStack
         w={"100%"}
-        alignItems={"flex-start"}
-        justifyContent={"space-between"}
+        alignItems={{ sm: "center", md: "flex-start" }}
+        justifyContent={{ sm: "center", md: "space-between" }}
       >
-        <VStack w={"100%"} alignItems={"flex-start"}>
+        <Flex
+          w={{sm:"70%", md: "100%"}}
+          alignItems={{ sm: "center", md: "flex-start" }}
+          justifyContent={{ sm: "center" }}
+          m={{ sm: "0 auto", md: "0 auto" }}
+        >
           <form
             autoComplete={"off"}
             className={"form"}
             onSubmit={formik.handleSubmit}
           >
-            <HStack spacing={8}>
+            <HStack spacing={8} minW={"30rem"}>
               <FormControl
                 isRequired
                 isInvalid={!!formik.errors.guests && formik.touched.guests}
@@ -276,9 +294,9 @@ const BookingForm = () => {
               />
             </Button>
           </form>
-        </VStack>
+        </Flex>
       </HStack>
-    </Box>
+    </Flex>
   );
 };
 

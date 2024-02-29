@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <Flex
-      bg={"whitesmoke"}
+      bg={"white"}
       className="header"
       maxW={"860px"}
       as="nav"
