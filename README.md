@@ -59,12 +59,12 @@ The brand style guide was provided and with it I was able to do the wireframe, p
 
 ### Optimizations/Problems to solve:
 
-- [ ] make it responsive for all screens
-- [x] show alert when submitting form
+- [x] make it responsive for all screens
+- [x] Show alert when submitting the form
 - [ ] better unit tests
 - [ ] better the performance/speed of the page on a page load
-- [ ] images optimizations
-- [x] switch the map image for a real map (leaftlet, e.g.)
+- [ ] image optimizations
+- [x] switch the map image for a real map (leaflet, e.g.)
 
 <hr/>
 
