@@ -17,8 +17,8 @@ code {
   width: 70%;
   margin: 20% auto;
 }
-/*
-@media (max-width: 950px) {
+
+@media (max-width: 320px) {
   #root {
     display: none;
   }
@@ -26,4 +26,4 @@ code {
   .alert-container {
     display: block;
   }
-} */
+}
