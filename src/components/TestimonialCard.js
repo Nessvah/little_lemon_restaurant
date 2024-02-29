@@ -27,7 +27,7 @@ const TestimonialCard = ({ name, imageSrc, comment, ratings }) => {
         <Heading as="h3" fontSize={"18"} fontFamily={"Karla"}>
           {name}
         </Heading>
-        <HStack p>
+        <HStack flexDir={{ sm: "column", md: "row" }}>
           <Avatar
             src={imageSrc}
             width={"65px"}
@@ -46,9 +46,9 @@ const TestimonialCard = ({ name, imageSrc, comment, ratings }) => {
           width={"100%"}
           pt={2}
           pb={2}
-          flexDir={{sm: "column", md: "row"}}
+          flexDir={{ sm: "column", md: "row" }}
         >
-          <HStack spacing={1} >{renderRatings(ratings)}</HStack>
+          <HStack spacing={1}>{renderRatings(ratings)}</HStack>
         </HStack>
       </VStack>
     </VStack>
